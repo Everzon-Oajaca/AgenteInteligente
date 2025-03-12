@@ -10,7 +10,7 @@ db.sequelize.sync().then(() => {
   console.log('Las tablas se sincronizaron correctamente sin eliminar ni recrear');
 });
 
-Configuración de CORS para permitir solicitudes desde localhost:3000
+// Configuración de CORS para permitir solicitudes desde localhost:3000
 const corsOptions = {
 
   origin: 'http://localhost:3000',
