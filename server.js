@@ -19,14 +19,6 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
-//const corsOptions = {
-  //origin: '*', // Permitir acceso desde cualquier origen
-  //methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  //allowedHeaders: ['Content-Type']
-//};
-//app.use(cors(corsOptions));
-
-
 
 // Middlewares
 app.use(bodyParser.json());
