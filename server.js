@@ -6,7 +6,7 @@ const librosRouter = require('./app/routers/preguntaRouter.js'); // Única ruta 
 const db = require('./app/config/db.config.js');
 
 // Sincronizar la base de datos y las tablas sin eliminarlas ni recrearlas
-db.sequelize.sync({force : true}).then(() => {
+db.sequelize.sync().then(() => {
   console.log('Las tablas se sincronizaron correctamente sin eliminar ni recrear');
 });
 
